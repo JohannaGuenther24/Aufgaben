@@ -2,7 +2,7 @@ package com.btcag.bootcamp;
 
 import java.util.Scanner;
 
-public class Divisionscheck {
+public class DivCheck {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Welcher Divisor soll geprueft werden?");
