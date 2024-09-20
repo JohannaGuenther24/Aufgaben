@@ -1,6 +1,6 @@
 package com.btcag.bootcamp;
 
-public class Var {
+public class ArtihOp {
     public static void main(String[] args) {
 
         int var = 0;

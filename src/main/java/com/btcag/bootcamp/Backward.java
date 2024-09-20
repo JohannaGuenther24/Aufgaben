@@ -10,7 +10,7 @@ public class Backward {
         int l = zahl.length()-1;
 
         while (l >= 0) {
-            System.out.println(zahl.charAt(l));
+            System.out.print(zahl.charAt(l));
             l--;
         }
 
