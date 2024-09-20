@@ -15,7 +15,6 @@ public class ToUpperCase {
 
         while (i < text.length()) {
             int low = text.charAt(i);
-            System.out.println();
             char up = (char)(low-32);
             ergebnis = ergebnis + up;
             i++;
