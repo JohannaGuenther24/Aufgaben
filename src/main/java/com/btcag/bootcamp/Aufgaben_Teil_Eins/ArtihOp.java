@@ -1,4 +1,4 @@
-package com.btcag.bootcamp;
+package com.btcag.bootcamp.Aufgaben_Teil_Eins;
 
 public class ArtihOp {
     public static void main(String[] args) {

@@ -1,26 +1,26 @@
-package com.btcag.bootcamp;
+package com.btcag.bootcamp.Aufgaben_Teil_Eins;
 
 import java.util.Scanner;
 
-public class ASCIITriangle {
+public class ASCIISquare {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Bitte geben Sie eine ganze Zahl ein:");
         int Eingabe = sc.nextInt();
         char stern = (char)42;
         int zahl = Eingabe;
-        int Subtraktion = 1;
-        int zahl2 = Eingabe - Subtraktion;
+        int zahl2 = Eingabe;
 
         while (zahl > 0) {
-            while (zahl2 != Eingabe) {
+            while (zahl2 > 0) {
                 System.out.print(stern);
-                zahl2++;
+                zahl2--;
             }
-            System.out.println("");
-            Subtraktion++;
-            zahl2 = Eingabe - Subtraktion;
+            zahl2 = Eingabe;
             zahl--;
+            System.out.println("");
         }
+
+
     }
 }
