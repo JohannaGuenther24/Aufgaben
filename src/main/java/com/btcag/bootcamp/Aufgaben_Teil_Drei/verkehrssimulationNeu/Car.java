@@ -53,6 +53,17 @@ public class Car {
             } else {
                 beschleunigung();
             }
+        } else if (aktuellesFeld(car) == '┬'){
+            if (car.richtung.equals("w") && neueRichtung.equals("o") || car.richtung.equals("o") && neueRichtung.equals("w")) {
+                beschleunigung();
+            } else if (car.richtung.equals("n") && neueRichtung.equals("o") || car.richtung.equals("n") && neueRichtung.equals("w") || car.richtung.equals("w") && neueRichtung.equals("s") || car.richtung.equals("o") && neueRichtung.equals("s")){
+                if (aktuellesFeld(car) != feldVorher) {
+                    bremsen();
+                    feldVorher = aktuellesFeld(car);
+                } else {
+                    beschleunigung();
+                }
+            }
         }
         fortschritt = geschwindigkeit + fortschritt;
         if(fortschritt >= 1){
